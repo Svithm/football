@@ -32,7 +32,7 @@ body {
     text-decoration: none;
     color: #39930d;
     font-size: 22px;
-} 
+}
 .logo b {
     display: block;
     font-size: 44px;
@@ -49,13 +49,11 @@ body {
 }
 .phone-number i {
     display: block;
+    padding-top: 8px;
     font-size: 14px;
     color: #5a5a5a;
     text-align: right;
 }  
-.phone-number {
-    float: right;
-}
 .slider {
     width: 100%;
 }
