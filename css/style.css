@@ -5,11 +5,11 @@ body {
     font-family: Arial, sans-serif;
     
 }
-.clear::after {
+/* .clear::after {
     content: "";
     display: block;
     clear: both;
-}
+} */
 .wrapper {
     max-width: 960px;
     background-color: #ffffff;
@@ -19,6 +19,8 @@ body {
 }
 .header {
     padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
 }
 .logo,
 .logo p,
@@ -59,14 +61,15 @@ body {
 }
 .main {
     margin-bottom: 45px;
+    display: flex;
 }
 .content h1 {
     color: #39930d;
     font-size: 24px;
 }
 .content {
-    max-width: 600px;
-    float: left;
+    width: 70%;
+    padding-right: 10px;
 }
 .content p {
     color: #343434;
@@ -74,7 +77,6 @@ body {
     font-size: 14px;
 }
 .menu {
-    float: right;
     width: 300px;
 }
 .menu p {
@@ -107,4 +109,35 @@ body {
     color: #fff;
     margin: 0 -15px;
     padding: 15px;
+}
+@media screen and (max-width:600px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    .phone-number i {
+        text-align: center;
+    }
+    .main {
+        flex-direction: column-reverse;
+    }
+    .menu,
+    .content {
+        width: 100%;
+    }
+    .slider {
+        height: 200px;
+        object-fit: cover;
+        object-position: 75%;
+    }
+}
+@media screen and (max-width:390px) {
+    .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo img {
+        float: none;
+    }
 }
