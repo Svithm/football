@@ -5,11 +5,6 @@ body {
     font-family: Arial, sans-serif;
     
 }
-/* .clear::after {
-    content: "";
-    display: block;
-    clear: both;
-} */
 .wrapper {
     max-width: 960px;
     background-color: #ffffff;
@@ -22,11 +17,20 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.logo,
-.logo p,
+.logo {
+    display: flex;
+    align-items: center;
+}
 .logo img {
-    float: left;
-} 
+    width: 50px;
+    transition: all 1s ease;
+    transform: rotate(350deg);
+}    
+.logo img:hover {
+    width: 80px;
+    padding-left: 200px;
+    transform: rotate(350deg);
+}
 .logo p, 
 .phone-number p,
 .phone-number a {
@@ -45,9 +49,6 @@ body {
 }
 .ball {
     margin-left: 35px;
-}
-.phone-number {
-    float: right;
 }
 .phone-number i {
     display: block;
